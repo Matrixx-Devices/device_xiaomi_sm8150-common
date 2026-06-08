@@ -366,9 +366,18 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/com.android.nfc_extras.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_nfc/com.android.nfc_extras.xml
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+PRODUCT_PACKAGES += \
+    DeviceAsWebcamOverlay \
+    DialerOverlayCommon \
+    FrameworkResOverlayCommon \
+    LauncherOverlayCommon \
+    LineageSDKOverlayCommon \
+    LineageSettingsProviderOverlayCommon \
+    LunarisDolbyOverlay \
+    SettingsOverlayCommon \
+    SettingsProviderOverlayCommon \
+    SystemUIOverlayCommon \
+    TelephonyOverlayCommon
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += $(LOCAL_PATH)/overlay/packages/apps/CarrierConfig
