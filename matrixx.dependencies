@@ -1,0 +1,25 @@
+[
+  {
+    "repository": "hardware_xiaomi",
+    "target_path": "hardware/xiaomi",
+    "revision": "16.2-vayu"
+  },
+  {
+    "repository": "packages_apps_LunarisDolby",
+    "target_path": "packages/apps/LunarisDolby"
+  },
+  {
+    "repository": "kernel_xiaomi_sm8150",
+    "target_path": "kernel/xiaomi/sm8150"
+  },
+  {
+    "repository": "vendor_xiaomi_sm8150-common",
+    "target_path": "vendor/xiaomi/sm8150-common",
+    "remote": "matrixx-gitlab"
+  },
+  {
+    "repository": "vendor_xiaomi_miuicamera",
+    "target_path": "vendor/xiaomi/miuicamera",
+    "remote": "matrixx-gitlab"
+  }
+]
