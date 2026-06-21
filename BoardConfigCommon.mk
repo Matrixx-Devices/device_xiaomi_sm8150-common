@@ -95,11 +95,8 @@ endif
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
-TARGET_KERNEL_SOURCE := kernel/xiaomi/sm8150
-TARGET_KERNEL_CONFIG := \
-    vendor/sm8150-perf_defconfig \
-    vendor/debugfs.config \
-    vendor/xiaomi/sm8150-common.config
+TARGET_KERNEL_SOURCE := kernel/xiaomi/vayu
+TARGET_KERNEL_CONFIG := vayu_defconfig
 
 # Media
 TARGET_DISABLED_UBWC := true
